@@ -1,0 +1,26 @@
+<%- include ('./includes/head.ejs') %>
+    <div class="form-group">
+        <h1>کارهای <small>روزمره</small></h1>
+
+        <%- include ('./includes/todoForm.ejs')  %>
+
+        <div class="mx-auto w-50 mb-3 alert alert-primary row">
+            <p class="d-inline col">
+                done todos:
+                <span class="badge badge-success badge-pill"
+                    ><%= completedTodos %>
+                </span>
+            </p>
+            <p class="d-inline col">
+                remaining todos:
+                <span class="badge badge-warning badge-pill"
+                    ><%= remainingTodos %></span
+                >
+            </p>
+        </div>
+
+            <%- include('./includes/todos.ejs') %>
+
+    </div>
+
+    <%- include ('./includes/footer.ejs')  %>
